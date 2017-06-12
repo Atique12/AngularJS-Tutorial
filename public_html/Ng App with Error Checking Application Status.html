@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Angular JS Tutorial Ng-App with Error Checking Application Status</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    <body>
+        <form ng-app="" name="myform" ng-init="Mytext='abc@gmail.com'">
+            Email::<input type="email" name="myAddress" ng-model="Mytext">
+            <p>Edit the e-mail address, and try to change the status.</p>
+            <h1>Status</h1>
+            <h3>Valid: {{myform.myAddress.$valid}} (If true then value meets all the criteria)</h3>
+            <h3>Dirty: {{myform.myAddress.$dirty}} (If true then value has been changed)</h3>
+            <h3>Touched: {{myform.myAddress.$touched}} (if true then the field has been in focused)</h3>
+        </form>
+    </body>
+</html>

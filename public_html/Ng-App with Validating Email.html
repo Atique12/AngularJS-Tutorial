@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Angular JS Tutorial Ng-App with Validating Email</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    <body>
+    <form ng-app="" name="myForm">
+        Email-ID:: <input type="email" name="myAddress" ng-model="text">
+        <span ng-show="myForm.myAddress.$error.email">Enter the Valid Email ID</span>
+    </form>
+        <p>Email ID Validation using Ng-App and Ng-show in Angular JS</p>
+    </body>
+</html>

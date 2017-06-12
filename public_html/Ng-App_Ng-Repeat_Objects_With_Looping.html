@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Angular JS Tutorial Ng-App with Ng-Repeat Objects With Looping</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="" ng-init="names=[{name:'Atique',country:'India'},
+                    {name:'Sunny',country:'US'},
+                    {name:'Sonu',country:'UK'}]">
+            <p>Looping with objects are:</p>
+              <ul>
+                  <li ng-repeat="x in names">
+                    {{x.name+','+x.country}}
+                  </li>
+              </ul>
+        </div>
+    </body>
+</html>
