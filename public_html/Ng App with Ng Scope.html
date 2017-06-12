@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Ng App with Ng Scope</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <h1>{{carname}}</h1>
+        </div>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+               $scope.carname = "Audi"; 
+            });
+        </script>
+        <p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }} brackets.</p>
+
+    </body>
+</html>
